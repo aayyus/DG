@@ -1,0 +1,33 @@
+body {
+    background-image: url("https://www.notesnepal.com/wp-content/uploads/2020/09/WBC_7095.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+.collapse{
+        text-align: right;
+  }
+h1{
+        color: white;
+        margin-left: 20%;
+        
+  }
+
+
+.navbar-nav{
+    position: absolute;
+    left:60%;
+}
+
+.nav-item {
+    border-bottom: 1px solid transparent;
+}
+.nav-item:hover{
+    border-bottom: solid 1px orange;
+}
+button{
+    position: relative;
+    left:20%;
+    border-radius:60%;
+    opacity: 0.85;
+}

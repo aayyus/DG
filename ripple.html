@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            margin: 100px;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            position: absolute;
+        
+            border: solid blue 2px;
+        }
+        
+        .button:hover::before {
+            animation: circle 2s linear infinite;
+        }
+        .button:hover::after {
+            animation: circle 2s linear 0.5s infinite;
+        }
+        
+        .button::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        
+            border: solid blue 2px;
+            border-radius: 50%;
+        }
+        .button::after {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            border: solid blue 2px;
+            border-radius: 50%;
+        }
+        @keyframes circle {
+            0% {
+                height: 90%;
+                width: 90%;
+                opacity: 0;
+            }
+            50% {
+            height: 120%;
+                width: 120%;
+                opacity: 0.7;
+            }
+            100%{
+                opacity: 0;
+                height: 150%;
+                    width: 150%;
+            }
+        }
+        </style>
+        
+</head>
+<body>
+    <div>
+        <button type="button"class="button" >CLICK ME</button>
+    
+        </div>
+    
+    
+</body>
+</html>
+

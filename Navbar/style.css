@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 80%;
+    /* border: 3px solid white; */
+    border-radius:50%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    justify-content: center;
+    top: 0;
+    cursor: pointer;
+
+
+}
+
+.nav-list {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 0px 30px;
+
+}
+
+.nav-list li a {
+
+    color: white;
+    text-decoration: none;
+}
+.nav-list li a:hover{
+
+    color: grey;
+}
+
+.rightNav {
+    padding: 0 5px;
+    width: 30%;
+    text-align: right;
+
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0, 0,0, 0.7) url('https://lh3.googleusercontent.com/tW1TE_IfntMYWQWcDbDZf8ztEpRJy1iMmIb5yyFT9FXkQ3xErx1t9JMhZvVXrU2-bqh_NkIDPKs_Qw=e14-rj-sc0xffffff');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.background1{
+    background: rgba(0, 0,0, 0.7) url('https://lh3.googleusercontent.com/tW1TE_IfntMYWQWcDbDZf8ztEpRJy1iMmIb5yyFT9FXkQ3xErx1t9JMhZvVXrU2-bqh_NkIDPKs_Qw=e14-rj-sc0xffffff');
+    background-size:cover;
+    background-blend-mode: darken;
+}
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+
+}
+.firstHalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.secondHalf{
+    width: 30%;
+
+}
+.secondHalf img{
+    width: 70%;
+    padding: 4px 0;
+    border: 4px solid white;
+    border-radius: 50%;
+    height: 8rem;
+    display: block;
+
+}
+.text-big{
+    font-size: 50px;
+    
+
+}
+.text-small{
+    font-size: 15px;
+
+}
+.btn{
+    padding: 8px 20px;
+    border: 2px solid white;
+    margin: 7px 3px;
+    border-radius: 15%;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.section{
+    height: 500px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+}
+.Left{
+    
+    flex-direction: row-reverse;
+   
+}
+.paras{
+    padding:0 65px;
+
+}
+.contact{
+    background-color:grey;
+    height: 32vh;
+}
+.text-center{
+    text-align: center;
+}
+.form{
+    max-width: 344px;
+    margin: auto;
+}
+.form input{
+    width: 100%;
+    padding: 20px;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width: 1140px){
+ 
+    .nav-list{  flex-direction:column;
+        padding: 20px;
+}
+.navbar{
+    flex-direction: column;
+    transition: all 0.7s ease-out;
+    padding: 20px;
+    height: 478px;
+
+}
+.rightNav{
+    text-align: center;
+}
+.burger{
+    display: block;
+}
+.h-nav{
+    height: 112px;
+}
+.v-class{
+    opacity: 0;
+}
+
+    
+}
